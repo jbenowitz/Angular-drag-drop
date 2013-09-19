@@ -32,7 +32,7 @@
                         e.originalEvent.dataTransfer.effectAllowed = 'move';
 
                         //ALLOWS MOVEMENT IN FIREFOX:
-                        e.originalEvent.dataTransfer.setData( 'text', 'asf' );
+                        e.originalEvent.dataTransfer.setData( 'application/octet-stream', 'asf' );
 
                         scope.$apply( function () {
                             scope.whenStart( { data: dndApi.getData() } );
